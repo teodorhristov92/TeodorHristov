@@ -549,6 +549,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 .portfolio .portfolio-wrap img {
   width: 100%;
@@ -573,6 +575,17 @@ section {
 /* Specific styling for yAxis hoodie image */
 .portfolio .portfolio-wrap.yaxis-hoodie img {
   object-position: left center;
+}
+
+/* Add a more visible pulse animation to indicate clickability */
+@keyframes visible-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.portfolio .portfolio-wrap:hover img {
+  animation: visible-pulse 1.5s infinite ease-in-out;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -649,10 +662,28 @@ section {
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 2px solid #0563bb;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #148af9;
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  border-color: #148af9;
+  box-shadow: 0 2px 8px rgba(5, 99, 187, 0.3);
 }
+.portfolio .portfolio-wrap:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: #0563bb;
+}
+
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
   left: 0;
