@@ -680,7 +680,7 @@ section {
 }
 .portfolio .portfolio-wrap:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 1);
   border-color: #0563bb;
 }
 
@@ -1110,3 +1110,4 @@ section {
 .gclose {
   background: #0563bb !important;
 }
+
