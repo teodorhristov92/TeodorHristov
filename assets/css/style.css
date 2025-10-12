@@ -1185,3 +1185,7 @@ section {
 .container section{
   padding: 0px;
 }
+
+.gslide-title{
+  font-weight: bold !important;
+}
