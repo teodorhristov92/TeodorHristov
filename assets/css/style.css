@@ -1632,3 +1632,15 @@ body.glightbox-open {
 .glightbox-container .lightbox-content {
   max-height: none !important;
 }
+
+.project-card a {
+  color: #0563bb;
+}
+
+.section-title {
+  padding-top: 30px;
+}
+
+.skills {
+  padding-top: 30px;
+}
