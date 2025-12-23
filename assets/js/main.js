@@ -296,16 +296,39 @@
     </div>
 
     <!-- hidden inline content for modal -->
-    <div id="project-${project.id}" style="display:none;">
+    <div class="card-show" id="project-${project.id}" style="display:none;">
       <div class="lightbox-content">
-        <h2>${project.title}</h2>
-        <img src="${project.image}" class="img-fluid" alt="${project.title}">
-        <p>${project.description}</p>
-        <p><strong>Category:</strong> ${project.category}</p>
-        <p><strong>Tools:</strong> ${project.tools}</p>
+        <!-- Header -->
+        <header class="case-header">
+          <h2>${project.title}</h2>
+          <p class="case-intro">
+            ${project.description}
+          </p>
+        </header>
+
+        <!-- Hero image -->
+        <figure class="case-hero">
+          <img src="${project.image}" alt="${project.title}">
+        </figure>
+
+        <hr>
+        <!-- Meta info -->
+        <section class="case-meta">
+          <p><strong>Category:</strong> ${project.category}</p>
+          <p><strong>Tools:</strong> ${project.tools}</p>
+        </section>
       </div>
     </div>
   `;
   });
+
+  if (!window.portfolioLightbox) {
+    window.portfolioLightbox = GLightbox({
+      selector: '.portfolio-lightbox'
+    });
+  } else {
+    window.portfolioLightbox.reload();
+  }
+
 
 })()
