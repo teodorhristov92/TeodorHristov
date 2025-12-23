@@ -4,7 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+
+(function () {
   "use strict";
 
   /**
@@ -90,7 +91,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -99,7 +100,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -159,7 +160,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -180,9 +181,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -190,7 +191,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -259,6 +260,52 @@
       once: true,
       mirror: false
     })
+  });
+
+
+
+  // Get container
+  const cardContainer = document.getElementById('card-grid');
+
+  // Render all project cards
+  projectData.forEach(project => {
+    const filterClass = categoryMap[project.category] || "filter-app";
+
+    cardContainer.innerHTML += `
+    <div class="col-lg-4 col-md-6 portfolio-item ${filterClass} box-shadow">
+      <div class="inside-card h-100">
+        <div class="portfolio-wrap">
+          <img src="${project.image}" class="img-fluid" alt="${project.title}">
+        </div>
+
+        <div class="project-card d-flex flex-column h-100">
+          <h3><strong>${project.title}</strong></h3>
+          <p class="project-description">${project.description}</p>
+          <hr>
+          <p class="project-meta">${project.category}</p>
+          <p class="project-tools">${project.tools}</p>
+          <hr>
+
+          <div class="portfolio-links mt-auto">
+            <a href="#project-${project.id}" class="portfolio-lightbox" data-glightbox='type: inline;'>
+              View Case Study →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hidden inline content for modal -->
+    <div id="project-${project.id}" style="display:none;">
+      <div class="lightbox-content">
+        <h2>${project.title}</h2>
+        <img src="${project.image}" class="img-fluid" alt="${project.title}">
+        <p>${project.description}</p>
+        <p><strong>Category:</strong> ${project.category}</p>
+        <p><strong>Tools:</strong> ${project.tools}</p>
+      </div>
+    </div>
+  `;
   });
 
 })()
