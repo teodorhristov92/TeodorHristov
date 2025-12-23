@@ -311,6 +311,29 @@
           <img src="${project.image}" alt="${project.title}">
         </figure>
 
+        <h3>PROBLEM</h3>
+        <div>
+          <p>${project.problem}</p>
+        </div>
+
+        <hr>
+        <h3>ROLE & RESPONSIBILITIES </h3>
+        <div>
+          <p>${project.role}</p>
+        </div>
+
+        <hr>
+        <h3>PROCESS</h3>
+        <div>
+          <p>${project.process}</p>
+        </div>
+
+        <hr>
+        <h3>OUTCOME & LEARNINGS</h3>
+        <div>
+          <p>${project.outcome}</p>
+        </div>
+
         <hr>
         <!-- Meta info -->
         <section class="case-meta">

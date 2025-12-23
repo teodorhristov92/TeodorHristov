@@ -7,10 +7,10 @@ const projectData = [
         tools: "Illustrator · Photoshop · Blender",
         image: "assets/img/portfolio/portfolio-26.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Transitioning a digital-first brand into a physical medium without losing the intricate details of the digital identity. The challenge was to design a 3D object that felt premium and tangible while maintaining the specific geometric precision of the yAxis logo and mascot for physical engraving.",
+        role: "I was responsible for the end-to-end creative process, from the initial 2D vector illustrations to the 3D modeling and material visualization used to guide the final manufacturing process.",
+        process: "The project began with detailed vector drafting in Illustrator to define the engraving paths. I then moved into Blender to create a high-fidelity 3D mockup, testing how light interacted with different metallic finishes (brushed vs. polished). Finally, I used Photoshop to create the final presentation renders seen in the portfolio.",
+        outcome: "Successfully produced a limited-edition physical coin that served as the primary trophy for the competition. The design was praised by the community for its phygita appeal, successfully strengthening brand loyalty by providing winners with a high-value, tangible keepsake."
     },
     {
         id: 2,
@@ -20,10 +20,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-47.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "DynaDome needed to communicate a complex architectural benefit—retractable pool enclosures—in a fast-paced digital environment. The challenge was to create visual assets that clearly demonstrated the transition from outdoor to indoor space while maintaining high readability on small mobile screens where detailed architectural photos can often become cluttered.",
+        role: "Visual Designer & Ad Strategist. I was responsible for selecting the high-impact hero imagery, designing the layout for cross-device compatibility, and crafting the typographic hierarchy to ensure the Year-Round value proposition was immediately visible.",
+        process: "I began by retouching architectural photography in Photoshop to enhance the lifestyle appeal of the pools. I then used Illustrator to develop a clean, grid-based layout for the ad copy. I performed A/B testing on different headline placements to determine which configuration worked best for both ultra-wide desktop banners and vertical mobile social feeds.",
+        outcome: "The campaign resulted in a cohesive visual identity across all digital touchpoints. The ads achieved a higher click-through rate compared to previous campaigns, successfully driving more inquiries for DynaDome’s custom enclosure solutions."
     },
 
     {
@@ -34,10 +34,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-41.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "NovaLink needed to establish a Digital Era identity that felt both technologically advanced and approachable. The challenge was to design a physical business card that didn't feel outdated, requiring a seamless bridge between a traditional networking tool and the company's digital ecosystem.",
+        role: "Brand Identity Designer. I was responsible for the visual conceptualization, color theory application, and the integration of functional digital elements like QR codes into a high-end print layout.",
+        process: "I began by developing a custom geometric pattern and a soft-tech color palette in Illustrator. I focused on the mathematical balance of the shapes to suggest connectivity. I then used Photoshop to create realistic textures and mockups to ensure the gradients would translate perfectly from screen to premium cardstock.",
+        outcome: "A sophisticated branding suite that effectively communicates innovation. The inclusion of the integrated QR code significantly reduced the friction for new leads to save contact data, resulting in a more modern and efficient networking experience for the NovaLink team."
     },
 
     {
@@ -48,10 +48,10 @@ const projectData = [
         tools: "Photoshop",
         image: "assets/img/portfolio/portfolio-48.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Online academic programs often struggle with information overload in social media feeds. The challenge was to distill complex degree requirements and benefits into a split-second visual hook that felt prestigious enough for a Master's degree while being scroll-stopping on platforms like Instagram and LinkedIn.",
+        role: "Lead Visual Designer. My focus was on art direction, typographic hierarchy, and psychological color mapping to create a sense of authority and academic trust.",
+        process: "I worked exclusively in Photoshop to composite clean, high-resolution academic imagery with bold, high-contrast typography. I designed a template system that allowed for quick variations between different degrees (Law vs. Business) while maintaining a consistent and recognizable brand voice across the entire campaign.",
+        outcome: "The campaign successfully increased lead generation for the enrollment department. By replacing text-heavy posts with these direct, high-impact visuals, making the programs appear more accessible to prospective students."
     },
 
     {
