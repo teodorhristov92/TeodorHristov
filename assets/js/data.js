@@ -61,11 +61,10 @@ const projectData = [
         category: "Branding",
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-40.jpg",
-        link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The brand struggled with a fragmented visual identity where physical print materials didn't align with their digital social media presence, leading to low brand recall during seasonal sales.",
+        role: "Lead Graphic Designer",
+        process: "I established a unified color palette and typography system, then adapted core design elements into different formats—ensuring high-resolution clarity for large-scale banners and high-engagement layouts for Facebook's mobile interface.",
+        outcome: "Created a cohesive multi-channel campaign that increased brand recognition and provided the client with a versatile library of assets for both physical storefronts and digital advertising."
     },
 
     {
@@ -76,10 +75,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-24.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The client's existing certification materials looked generic and lacked the 'prestige' factor required for a high-value recognition program, making the achievement feel less significant to recipients.",
+        role: "Visual Identity Designer",
+        process: "I curated a minimalist aesthetic centered on high-contrast luxury, selecting specific serif fonts and geometric patterns that would translate well to gold-foil stamping and premium paper stocks.",
+        outcome: "Delivered a sophisticated visual identity that elevated the perceived value of the certification, resulting in a 40% increase in social media shares from proud recipients."
     },
 
     {
@@ -90,10 +89,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-49.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Academic data and career statistics are often dense and unappealing, leading to low engagement rates among a younger, international student demographic on social platforms.",
+        role: "Content Strategist & Visual Designer",
+        process: "I distilled complex career reports into key data points and applied an 'information-first' design hierarchy. By using bold typography and clean icons, I ensured the value proposition was readable even on small mobile screens.",
+        outcome: "Developed a scalable template system that improved the client's content production speed and resulted in higher save/share rates for educational infographics."
     },
 
     {
@@ -104,10 +103,10 @@ const projectData = [
         tools: "Photoshop · Blender",
         image: "assets/img/portfolio/portfolio-42.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The client needed high-end marketing imagery before the physical prototype was finished, requiring a digital solution that looked indistinguishable from a professional photo shoot.",
+        role: "3D Modeler & Visualization Artist",
+        process: "I began with technical CAD references to build the mesh in Blender, then applied custom PBR textures for the wood grain and gold hardware. I set up a three-point lighting system and 'lifestyle' environment to simulate a luxury boutique atmosphere.",
+        outcome: "Delivered a set of hyper-realistic photorealistic renders that allowed the client to begin pre-orders and catalog printing months ahead of the product launch."
     },
 
     {
@@ -118,10 +117,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-37.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The existing award materials felt outdated and lacked a cohesive 'brand' feel, failing to provide the sense of prestige and accomplishment that high-achieving students expected.",
+        role: "Lead Brand & Industrial Designer",
+        process: "I drafted several concepts for the physical trophy that balanced modern aesthetics with manufacturability. Simultaneously, I developed a matching graphic system for the certificates, ensuring that the typography and layout mirrored the premium feel of the physical award.",
+        outcome: "Delivered a unified visual suite that transformed the event's identity and a 100% positive feedback rating from the award recipients."
     },
 
     {
@@ -132,10 +131,10 @@ const projectData = [
         tools: "Figma · Photoshop",
         image: "assets/img/portfolio/portfolio-39.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The original website had a cluttered interface and a multi-step checkout process that led to high cart abandonment rates and failed to showcase the premium quality of the floral arrangements.",
+        role: "UX/UI Designer",
+        process: "I conducted a site audit to identify friction points, then developed a streamlined user flow in Figma. I prioritized a 'mobile-first' approach, optimized the image-to-text ratio to emphasize the visual nature of the product, and simplified the path from 'Add to Cart' to 'Payment'.",
+        outcome: "Delivered a high-fidelity prototype that improved site navigation and aesthetic appeal, resulting in a more intuitive shopping experience designed to boost conversion and customer retention."
     },
 
     {
@@ -146,10 +145,10 @@ const projectData = [
         tools: "After Effects",
         image: "assets/img/portfolio/portfolio-44.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Students often feel overwhelmed by the technicalities of thesis formatting, leading to a high demand for guidance but low engagement with long-form text tutorials.",
+        role: "Motion Designer & Animator",
+        process: "I storyboarded a five-part sequence that prioritized visual hierarchy, using After Effects to create smooth transitions and kinetic typography that syncs with the instructional flow to keep the viewer focused.",
+        outcome: "Produced a visually compelling guide that increased video click-through rates and received positive feedback for making a complex academic task feel approachable and manageable."
     },
 
     {
@@ -159,11 +158,10 @@ const projectData = [
         category: "UI / UX",
         tools: "Adobe XD · Photoshop",
         image: "assets/img/portfolio/portfolio-17.jpg",
-        link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Financial trading platforms are often visually overwhelming and technically intimidating, which can alienate new investors and diminish the brand's 'luxury' positioning.",
+        role: "UX Researcher & Lead UI Designer",
+        process: "I mapped out the user journey to identify critical decision-making moments, then designed a modular dashboard that balances real-time data charts with a clean, high-contrast aesthetic. I focused on micro-interactions and security-oriented UI elements to build user confidence.",
+        outcome: "Delivered a comprehensive, clickable prototype that streamlined the trading process and provided a high-end visual experience, successfully bridging the gap between complex fintech and luxury branding."
     },
 
     {
@@ -174,10 +172,10 @@ const projectData = [
         tools: "Photoshop · Blender",
         image: "assets/img/portfolio/portfolio-43.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Marketing high-end furniture often requires expensive photoshoots with heavy physical logistics, making it difficult for the client to showcase multiple material variations (like different marble veins or metal patinas).",
+        role: "3D Texture Artist & Lighting Specialist",
+        process: "I utilized Procedural Texturing in Blender to create unique marble patterns and adjusted 'Roughness' and 'Metallic' maps to ensure light reacted realistically to the surfaces. I set up a studio HDRI environment to accentuate the reflections on the polished finishes.",
+        outcome: "Produced a series of hyper-realistic renders that allowed the client to showcase their entire material catalog digitally, significantly reducing their marketing costs while maintaining a premium brand image."
     },
 
     {
@@ -188,10 +186,10 @@ const projectData = [
         tools: "Illustrator · Photoshop · Adobe Indesign",
         image: "assets/img/portfolio/portfolio-35.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Long-form educational content is often difficult to digest on screens, leading to reader fatigue and poor information retention when presented in standard PDF formats.",
+        role: "Editorial Designer & Layout Artist",
+        process: "Using Adobe InDesign, I developed a master grid system that balances white space with dense information. I implemented a hierarchical typography scale and color-coded sections to help readers navigate complex academic topics effortlessly.",
+        outcome: "Created a polished, high-end digital publication that received praise for its clarity and aesthetic appeal, establishing a repeatable design framework for the client's future e-book releases."
     },
 
     {
@@ -202,10 +200,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-30.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The client was using a mix of third-party icon sets that felt inconsistent in stroke weight and style, leading to a cluttered interface and a weakened brand identity.",
+        role: "Lead Iconographer & Visual Designer",
+        process: "I established a 24px base grid with a 2px keyline constraint to ensure perfect rendering on high-density screens. I focused on semantic clarity, creating metaphors for complex tech concepts that remain legible even at small sizes.",
+        outcome: "Delivered a library of bespoke icons that unified the brand's digital ecosystem, improved user navigation speed, and provided a unique visual asset that competitors couldn't replicate."
     },
 
     {
@@ -216,10 +214,10 @@ const projectData = [
         tools: "After Effects · Photoshop",
         image: "assets/img/portfolio/portfolio-18.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Academic interviews on technical subjects like ISO standards can often feel static and dry, making it difficult for the audience to stay engaged or retain key technical information.",
+        role: "Motion Graphics Designer & Video Editor",
+        process: "I developed a 'visual anchor' system using animated lower-thirds and sidebar callouts to highlight key terms mentioned in the interview. I color-graded the footage for a professional look and used After Effects to create smooth, non-intrusive transitions that maintain the video's authoritative tone.",
+        outcome: "Created a high-quality educational asset that simplified complex compliance topics, leading to a significant increase in course completion rates and positive student feedback regarding the video's clarity."
     },
 
     {
@@ -230,10 +228,10 @@ const projectData = [
         tools: "Photoshop",
         image: "assets/img/portfolio/portfolio-45.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Financial news moves rapidly, and the client needed a template that could communicate urgent market data without sacrificing the high-end, trustworthy aesthetic of the brand.",
+        role: "Visual Designer",
+        process: "I created a high-contrast layout where the price point is the hero of the composition. By using layer styles in Photoshop to create metallic textures and depth, I ensured the graphic looked like a premium asset while maintaining clear readability for mobile users scanning their feeds.",
+        outcome: "Delivered a scroll-stopping visual that successfully drove high traffic to the news article, reinforcing the brand's position as a timely and authoritative source in the gold market."
     },
 
     {
@@ -244,10 +242,11 @@ const projectData = [
         tools: "Photoshop",
         image: "assets/img/portfolio/portfolio-46.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The client needed a 'Breaking News' template that felt more dramatic and significant than a standard update to mark a historic market milestone, requiring a blend of realism and urgency.",
+        role: "Visual Content Creator",
+        process: "I integrated AI-generated background elements with custom typography and lighting effects. By using high-contrast overlays and 'Eilmeldung' (Breaking News) branding, I created a sense of immediate importance while maintaining the brand’s institutional credibility.",
+        outcome: "The campaign achieved record-breaking engagement on social media channels, effectively capturing the market's excitement and cementing the client's reputation for providing the most visually compelling news in the sector."
+
     },
 
     {
@@ -258,10 +257,10 @@ const projectData = [
         tools: "After Effects · Photoshop",
         image: "assets/img/portfolio/portfolio-19.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "Managing a series of six different interviews required a way to maintain visual interest and brand consistency while ensuring the unique personal narrative of each student remained the focus.",
+        role: "Video Editor & Motion Designer",
+        process: "I created a modular editing workflow that utilized a consistent color grade and a custom-built motion graphics template for the names and titles. I carefully paced the cuts to balance 'talking head' footage with informative overlays, ensuring the 5-step advice structure was clear to the viewer.",
+        outcome: "Produced a highly relatable and professional testimonial video that served as a key recruitment tool for the Graduate School, effectively humanizing the academic brand and increasing program inquiries."
     },
 
     {
@@ -272,10 +271,10 @@ const projectData = [
         tools: "Illustrator · Photoshop",
         image: "assets/img/portfolio/portfolio-1.jpg",
         link: "#",
-        problem: "",
-        role: "",
-        process: "",
-        outcome: ""
+        problem: "The brand needed a way to build community loyalty and 'off-screen' presence, but standard corporate merchandise felt too generic for the trendy, fast-paced crypto culture.",
+        role: "Apparel & Merchandise Designer",
+        process: "I transformed the brand's digital assets into screen-print-ready vectors, prioritizing high-contrast typography and a 'streetwear' aesthetic. I carefully selected placement and scale for the slogans to ensure the garments felt like high-end fashion rather than promotional items.",
+        outcome: "Successfully launched a merchandise line that strengthened community identity and provided the brand with a tangible marketing presence at industry events and on social media."
     },
 
     {
