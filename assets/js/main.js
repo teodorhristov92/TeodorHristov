@@ -307,8 +307,7 @@
     // 3. ПРЕЗАРЕЖДАМЕ СТРАНИЦАТА
     // Всичко под този ред няма да се изпълни веднага, а ще се случи 
     // в DOMContentLoaded след презареждането.
-    const currentPath = window.location.pathname;
-    window.location.href = currentPath + "?v=" + Date.now() + "#portfolio";
+    window.location.href = window.location.pathname + "?v=" + Date.now();
   }
 
   // =======================
