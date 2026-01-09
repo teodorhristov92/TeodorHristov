@@ -674,9 +674,7 @@ section {
   }
 }
 
-.portfolio .portfolio-wrap:hover img {
-  animation: visible-pulse 1.5s infinite ease-in-out;
-}
+.portfolio .portfolio-wrap:hover img {}
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -778,19 +776,9 @@ section {
   box-shadow: 0 2px 8px rgba(5, 99, 187, 0.3);
 }
 
-.portfolio .portfolio-wrap:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 1);
-  border-color: #0563bb;
-}
+.portfolio .portfolio-wrap:hover {}
 
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
+.portfolio .portfolio-wrap:hover::before {}
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
@@ -1644,4 +1632,49 @@ body.glightbox-open {
 
 .skills {
   padding-top: 30px;
+}
+
+button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#lang-switcher {
+  position: fixed;
+  /* stay on screen while scrolling */
+  top: 20px;
+  /* distance from top */
+  right: 20px;
+  /* distance from right */
+  z-index: 9999;
+  /* on top of everything */
+  display: flex;
+  gap: 10px;
+  /* space between buttons */
+}
+
+#lang-switcher button {
+  padding: 6px 12px;
+  border: 1px solid #0563bb;
+  background: #f2f3f5;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+#lang-switcher button.active {
+  background: #0563bb;
+  color: #f2f3f5;
+}
+
+
+.portfolio-item {
+  margin-bottom: 30px;
+  float: left;
+}
+
+#card-grid {
+  transition: height 0.5s ease-in-out;
 }

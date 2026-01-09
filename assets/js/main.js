@@ -5,9 +5,18 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
 (function () {
   "use strict";
+  let currentLanguage = localStorage.getItem("lang") || "en";
+  let typedInstance;
 
+  // Make it global so inline onclick can access it
+  window.setLanguage = function (lang) {
+    currentLanguage = lang;
+    localStorage.setItem("lang", lang);
+    renderPortfolio();
+  }
   /**
    * Easy selector helper function
    */
@@ -263,95 +272,393 @@
   });
 
 
+  // =======================
+  // SET LANGUAGE
+  // =======================
+  function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem("lang", lang);
 
-  // Get container
-  const cardContainer = document.getElementById('card-grid');
+    renderPortfolio();
+    renderHero();
+    highlightActiveLangButton();
+    renderAbout();
+    renderSkills();
+    renderPortfolioText();
+    renderFooter();
+    refreshPortfolio();
 
-  // Render all project cards
-  projectData.forEach(project => {
-    const filterClass = categoryMap[project.category] || "filter-app";
+    // 1. ПРЕМАХВАМЕ ФОКУСА (Критично за Accessibility грешката)
+    // Това освобождава асистиращите технологии преди промяната на съдържанието
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
 
-    cardContainer.innerHTML += `
-    <div class="col-lg-4 col-md-6 portfolio-item ${filterClass} box-shadow">
-      <div class="inside-card h-100">
-        <div class="portfolio-wrap">
-          <img src="${project.image}" class="img-fluid" alt="${project.title}">
-        </div>
+    // 2. ЗАПАЗВАМЕ ТЕКУЩОТО СЪСТОЯНИЕ
+    currentLanguage = lang;
+    localStorage.setItem("lang", lang);
 
-        <div class="project-card d-flex flex-column h-100">
-          <h3><strong>${project.title}</strong></h3>
-          <p class="project-description">${project.description}</p>
-          <hr>
-          <p class="project-meta">${project.category}</p>
-          <p class="project-tools">${project.tools}</p>
-          <hr>
+    // Запазваме филтъра, за да знаем коя категория да отворим след рефреша
+    const activeFilter = document.querySelector('#portfolio-flters .filter-active');
+    if (activeFilter) {
+      localStorage.setItem("activeFilter", activeFilter.getAttribute('data-filter'));
+    }
 
-          <div class="portfolio-links mt-auto">
-            <a href="#project-${project.id}" class="portfolio-lightbox" data-glightbox='type: inline;'>
-              View Case Study →
-            </a>
+    // 3. ПРЕЗАРЕЖДАМЕ СТРАНИЦАТА
+    // Всичко под този ред няма да се изпълни веднага, а ще се случи 
+    // в DOMContentLoaded след презареждането.
+    const currentPath = window.location.pathname;
+    window.location.href = currentPath + "?v=" + Date.now() + "#portfolio";
+  }
+
+  // =======================
+  // HIGHLIGHT ACTIVE BUTTON
+  // =======================
+  function highlightActiveLangButton() {
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === currentLanguage);
+    });
+  }
+
+  // =======================
+  // RENDER HERO
+  // =======================
+  function renderHero() {
+    const heroName = document.getElementById("hero-name");
+    const heroSubtitle = document.getElementById("hero-subtitle");
+    const typedContainer = document.getElementById("typed-container");
+    const portfolioButton = document.getElementById("see-work");
+
+    if (!heroName || !heroSubtitle || !typedContainer || !portfolioButton) return;
+
+    // Update static texts
+    heroName.textContent = heroText[currentLanguage].name;
+    heroSubtitle.textContent = heroText[currentLanguage].hero_im;
+    portfolioButton.textContent = heroText[currentLanguage].see_work;
+
+    const newStrings = heroText[currentLanguage].typed_items.split(", ");
+
+    // Destroy previous Typed.js instance if it exists
+    if (typedInstance) {
+      typedInstance.destroy();     // stop typing
+      typedInstance = null;        // remove reference
+    }
+
+    // Clear container before initializing
+    typedContainer.innerHTML = "";
+
+    // Use a short timeout to ensure DOM is ready (prevents flicker)
+    setTimeout(() => {
+      typedInstance = new Typed(typedContainer, {
+        strings: newStrings,
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+      });
+    }, 10); // 10ms delay is enough
+  }
+
+  // =======================
+  // ABOUT HERO
+  // =======================
+  function renderAbout() {
+    const lang = currentLanguage; // 'en' or 'bg'
+    const data = heroText[lang]; // Assuming your data object is named heroText
+
+    // Helper function to safely update text
+    const updateText = (id, text) => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = text;
+    };
+
+    // Update Section Headings
+    updateText("about-title", data.about_title);
+    updateText("about-categ", data.about_categ);
+
+    // Update Labels (The Bold text)
+    updateText("about-label-birthday", data.about_degree_birth + ":");
+    updateText("about-label-phone", data.about_degree_phone + ":");
+    updateText("about-label-city", data.about_city_text + ":");
+    updateText("about-label-degree", data.about_degree + ":");
+    updateText("about-label-email", data.about_degree_email + ":");
+    updateText("about-label-freelance", data.about_free + ":");
+
+    // Update Values (The specific info)
+    updateText("about-city-value", data.about_city);
+    updateText("about-degree-value", data.about_degree_type);
+    updateText("about-freelance-value", data.about_free_type);
+
+    // Update Main Bio (using innerHTML to support <br> tags)
+    updateText("about-main-text", data.about_main_text);
+  }
+
+  // =======================
+  // SKILLS PORTFOLIO
+  // =======================
+  function renderSkills() {
+    const lang = currentLanguage;
+    const data = heroText[lang];
+
+    const skillsTitle = document.getElementById("skills-title");
+    if (skillsTitle) {
+      skillsTitle.textContent = data.skills_title;
+    }
+  }
+
+
+  // =======================
+  // RENDER PORTFOLIO
+  // =======================
+  function renderPortfolio() {
+    const cardContainer = document.getElementById("card-grid");
+    if (!cardContainer) return;
+
+    // 1. ЗАПАЗВАМЕ ТЕХНИЧЕСКИЯ СЕЛЕКТОР (напр. ".filter-ux")
+    // Взимаме го директно от атрибута, за да не зависим от преведения текст на бутона
+    const activeBtn = document.querySelector('#portfolio-flters .filter-active');
+    const savedFilter = activeBtn ? activeBtn.getAttribute('data-filter') : '*';
+
+    // 2. УНИЩОЖАВАМЕ СТАРИЯ ИНСТАНС (Hard Reset)
+    // Това гарантира, че Isotope няма да търси "старите" английски елементи
+    if (typeof jQuery !== 'undefined' && jQuery.fn.isotope) {
+      const $grid = jQuery(cardContainer);
+      if ($grid.data('isotope')) {
+        $grid.isotope('destroy');
+      }
+    }
+
+    // 3. ГЕНЕРИРАМЕ НОВИЯ HTML
+    let portfolioHTML = "";
+    projectData.forEach(project => {
+      // Класът винаги се генерира от английското име за синхрон с филтрите
+      const filterClass = categoryMap[project.category.en] || "filter-app";
+
+      portfolioHTML += `
+      <div class="col-lg-4 col-md-6 portfolio-item ${filterClass} box-shadow">
+        <div class="inside-card h-100">
+          <div class="portfolio-wrap">
+            <img src="${project.image}" class="img-fluid" alt="${project.title[currentLanguage]}">
+          </div>
+          <div class="project-card d-flex flex-column h-100">
+            <h3><strong>${project.title[currentLanguage]}</strong></h3>
+            <p class="project-description">${project.description[currentLanguage]}</p>
+            <hr>
+            <p class="project-meta">${project.category[currentLanguage]}</p>
+            <p class="project-tools">${project.tools[currentLanguage]}</p>
+            <hr>
+            <div class="portfolio-links mt-auto">
+              <a href="#project-${project.id}" class="portfolio-lightbox" data-glightbox='type: inline;'>
+                ${currentLanguage === 'bg' ? 'Виж проекта →' : 'View Case Study →'}
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- hidden inline content for modal -->
-    <div class="card-show" id="project-${project.id}" style="display:none;">
-      <div class="lightbox-content">
-        <!-- Header -->
-        <header class="case-header">
-          <h2>${project.title}</h2>
-          <p class="case-intro">
-            ${project.description}
-          </p>
-        </header>
+      <!-- hidden inline content for modal -->
 
-        <!-- Hero image -->
-        <figure class="case-hero">
-          <img src="${project.image}" alt="${project.title}">
-        </figure>
+      <div class="card-show" id="project-${project.id}" style="display:none;">
 
-        <h3>PROBLEM</h3>
-        <div>
-          <p>${project.problem}</p>
+        <div class="lightbox-content">
+
+          <header class="case-header">
+
+            <h2>${project.title[currentLanguage]}</h2>
+
+            <p class="case-intro">${project.description[currentLanguage]}</p>
+
+          </header>
+
+
+          <figure class="case-hero">
+
+            <img src="${project.image}" alt="${project.title[currentLanguage]}">
+
+          </figure>
+
+
+          <h3>PROBLEM</h3>
+
+          <div><p>${project.problem[currentLanguage]}</p></div>
+
+          <hr>
+
+          <h3>ROLE & RESPONSIBILITIES</h3>
+
+          <div><p>${project.role[currentLanguage]}</p></div>
+
+          <hr>
+
+          <h3>PROCESS</h3>
+
+          <div><p>${project.process[currentLanguage]}</p></div>
+
+          <hr>
+
+          <h3>OUTCOME & LEARNINGS</h3>
+
+          <div><p>${project.outcome[currentLanguage]}</p></div>
+
+          <hr>
+
+
+          <section class="case-meta">
+
+            <p><strong>Category:</strong> ${project.category[currentLanguage]}</p>
+
+            <p><strong>Tools:</strong> ${project.tools[currentLanguage]}</p>
+
+          </section>
+
         </div>
 
-        <hr>
-        <h3>ROLE & RESPONSIBILITIES </h3>
-        <div>
-          <p>${project.role}</p>
-        </div>
-
-        <hr>
-        <h3>PROCESS</h3>
-        <div>
-          <p>${project.process}</p>
-        </div>
-
-        <hr>
-        <h3>OUTCOME & LEARNINGS</h3>
-        <div>
-          <p>${project.outcome}</p>
-        </div>
-
-        <hr>
-        <!-- Meta info -->
-        <section class="case-meta">
-          <p><strong>Category:</strong> ${project.category}</p>
-          <p><strong>Tools:</strong> ${project.tools}</p>
-        </section>
-      </div>
-    </div>
-  `;
-  });
-
-  if (!window.portfolioLightbox) {
-    window.portfolioLightbox = GLightbox({
-      selector: '.portfolio-lightbox'
+      </div> 
+        
+      `;
     });
-  } else {
-    window.portfolioLightbox.reload();
+    cardContainer.innerHTML = portfolioHTML;
+
+    // 4. РЕСТАРТИРАМЕ LIGHTBOX
+    const portfolioLightbox = GLightbox({ selector: '.portfolio-lightbox' });
+
+
   }
 
+  // =======================
+  // PortfolioText PORTFOLIO
+  // =======================
+  function renderPortfolioText() {
+    const lang = currentLanguage;
+    const data = heroText[lang];
+
+    const updateText = (id, text) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = text;
+    };
+
+    // Заглавие и подзаглавие
+    updateText("portfolio-title", data.portfolio_title);
+    updateText("portfolio-text", data.portfolio_title_text);
+
+    // Филтри
+    updateText("filter-all", data.portfolio_title_cat_one);
+    updateText("filter-branding", data.portfolio_title_cat_two);
+    updateText("filter-motion", data.portfolio_title_cat_three);
+    updateText("filter-uiux", data.portfolio_title_cat_four);
+    updateText("filter-concept", data.portfolio_title_cat_five);
+  }
+
+  // =======================
+  // Footer PORTFOLIO
+  // =======================
+  function renderFooter() {
+    const lang = currentLanguage;
+    const data = heroText[lang];
+
+    const footerName = document.getElementById("footer-name");
+    const footerContact = document.getElementById("footer-contact-text");
+
+    if (footerName) footerName.textContent = data.name;
+    if (footerContact) footerContact.textContent = data.footer_text;
+  }
+
+  function refreshPortfolio() {
+    const container = document.querySelector('.portfolio-container'); // Проверете дали това е вашият клас
+    if (container) {
+      // Ако използвате Isotope
+      const iso = new Isotope(container);
+      iso.layout();
+
+      // Малко закъснение е необходимо, за да може DOM да отрази промените в текста
+      setTimeout(() => {
+        iso.layout();
+      }, 300);
+    }
+  }
+  function changeLanguage(lang) {
+    currentLanguage = lang;
+
+    // Намираме текущо активния филтър от бутоните
+    const activeFilter = document.querySelector('#portfolio-flters .filter-active');
+    const currentFilterSelector = activeFilter ? activeFilter.getAttribute('data-filter') : '*';
+
+    // Рендираме портфолиото с новия език
+    renderPortfolio(currentFilterSelector);
+  }
+
+  // =======================
+  // INIT ON DOM LOAD
+  // =======================
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("lang") || "en";
+    const savedFilter = localStorage.getItem("activeFilter") || "*";
+    currentLanguage = savedLang;
+
+    // 1. Рендираме всичко
+    renderPortfolio();
+    renderHero();
+    highlightActiveLangButton();
+    renderAbout();
+    renderSkills();
+    renderPortfolioText();
+    renderFooter();
+
+    // 2. СИНХРОНИЗАЦИЯ НА БУТОНИТЕ
+    // Намираме всички бутони в менюто и маркираме активния според savedFilter
+    const filterButtons = document.querySelectorAll('#portfolio-flters li');
+    filterButtons.forEach(btn => {
+      btn.classList.remove('filter-active');
+      if (btn.getAttribute('data-filter') === savedFilter) {
+        btn.classList.add('filter-active');
+      }
+    });
+
+    // 3. ИНИЦИАЛИЗАЦИЯ НА ISOTOPE
+    setTimeout(() => {
+      const portfolioContainer = document.querySelector('.portfolio-container');
+      if (portfolioContainer && typeof Isotope !== 'undefined') {
+
+        // Създаваме инстанцията директно с филтъра
+        const iso = new Isotope(portfolioContainer, {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'masonry',
+          filter: savedFilter // Това казва кои да се виждат
+        });
+
+        // Подсигуряваме подредбата след зареждане на картинките
+        if (typeof imagesLoaded !== 'undefined') {
+          imagesLoaded(portfolioContainer, () => {
+            iso.layout();
+          });
+        }
+
+        // Важно: Трябва да добавим клик събитията за бутоните СЛЕД рефреша
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', function () {
+            filterButtons.forEach(li => li.classList.remove('filter-active'));
+            this.classList.add('filter-active');
+            iso.arrange({ filter: this.getAttribute('data-filter') });
+            // Запазваме новия избор, ако потребителят реши пак да смени езика
+            localStorage.setItem("activeFilter", this.getAttribute('data-filter'));
+          });
+        });
+      }
+
+      // Автоматично скролване (ако има котвата #portfolio)
+      if (window.location.hash === "#portfolio") {
+        const portfolioSection = document.getElementById("portfolio");
+        if (portfolioSection) {
+          portfolioSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, 600);
+
+    // Bind language buttons
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+    });
+  });
 
 })()
