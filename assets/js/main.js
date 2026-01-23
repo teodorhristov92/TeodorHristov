@@ -287,6 +287,8 @@
     renderPortfolioText();
     renderFooter();
     refreshPortfolio();
+    renderEducation();
+    renderExp();
 
     // 1. ПРЕМАХВАМЕ ФОКУСА (Критично за Accessibility грешката)
     // Това освобождава асистиращите технологии преди промяната на съдържанието
@@ -406,6 +408,57 @@
     }
   }
 
+  // =======================
+  // RENDER EDUCATION
+  // =
+  function renderEducation() {
+    const lang = currentLanguage;
+    const data = heroText[lang];
+
+    const master_title = document.getElementById("master-school");
+    const master_desc = document.getElementById("master-desc");
+    const bachelor_title = document.getElementById("bachelor-school");
+    const bachelor_desc = document.getElementById("bachelor-desc");
+    const school_title = document.getElementById("school-title");
+    const school_desc = document.getElementById("school-desc");
+    const education_title = document.getElementById("Education-title");
+
+    if (master_title) master_title.textContent = data.master_title;
+    if (master_desc) master_desc.textContent = data.master_info;
+    if (bachelor_title) bachelor_title.textContent = data.bachelor_title;
+    if (bachelor_desc) bachelor_desc.textContent = data.bachelor_info;
+    if (school_title) school_title.textContent = data.school_title;
+    if (school_desc) school_desc.textContent = data.school_info;
+    if (education_title) education_title.textContent = data.education_title;
+  }
+
+  // =======================
+  // RENDER EXPERIENCE
+  // =
+  function renderExp() {
+    const lang = currentLanguage;
+    const data = heroText[lang];
+
+    const exp_title = document.getElementById("exp_title");
+    const exp_one_title = document.getElementById("exp_one_title");
+    const exp_one_company = document.getElementById("exp_one_company");
+    const exp_two_title = document.getElementById("exp_two_title");
+    const exp_two_company = document.getElementById("exp_two_company");
+    const exp_three_title = document.getElementById("exp_three_title");
+    const exp_three_company = document.getElementById("exp_three_company");
+    const exp_four_title = document.getElementById("exp_four_title");
+    const exp_four_company = document.getElementById("exp_four_company");
+
+    if (exp_title) exp_title.textContent = data.exp_title;
+    if (exp_one_title) exp_one_title.textContent = data.exp_one_title;
+    if (exp_one_company) exp_one_company.textContent = data.exp_one_company;
+    if (exp_two_title) exp_two_title.textContent = data.exp_two_title;
+    if (exp_two_company) exp_two_company.textContent = data.exp_two_company;
+    if (exp_three_title) exp_three_title.textContent = data.exp_three_title;
+    if (exp_three_company) exp_three_company.textContent = data.exp_three_company;
+    if (exp_four_title) exp_four_title.textContent = data.exp_four_title;
+    if (exp_four_company) exp_four_company.textContent = data.exp_four_company;
+  }
 
   // =======================
   // RENDER PORTFOLIO
@@ -603,6 +656,8 @@
     renderSkills();
     renderPortfolioText();
     renderFooter();
+    renderEducation();
+    renderExp();
 
     // 2. СИНХРОНИЗАЦИЯ НА БУТОНИТЕ
     // Намираме всички бутони в менюто и маркираме активния според savedFilter
