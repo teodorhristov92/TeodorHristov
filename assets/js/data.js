@@ -834,34 +834,6 @@ const projectData = [
 
     {
         id: 23,
-        title: "Heritage Branding: Modernizing Traditional Bulgarian Motifs",
-        description: "A cultural branding project that breathes new life into traditional Bulgarian embroidery patterns. I translated intricate, centuries-old motifs into a modern digital format, creating high-fidelity assets suitable for product design, luxury packaging, and architectural accents. This work showcases a delicate balance between preserving cultural heritage and applying modern design aesthetics.",
-        category: "Product Design",
-        tools: "Photoshop",
-        image: "assets/img/portfolio/portfolio-31.jpg",
-        link: "#",
-        problem: "Traditional motifs are often stored in low-resolution or hand-drawn formats that are difficult to apply to modern industrial manufacturing or high-end digital branding without looking dated or pixelated.",
-        role: "Visual Identity & Motif Designer",
-        process: "I meticulously traced and digitized traditional 'shevitsa' patterns, simplifying complex geometry while maintaining symbolic integrity. I applied advanced Photoshop techniques to create high-resolution textures and gold-inlay mockups to demonstrate how these patterns translate to luxury physical products.",
-        outcome: "Created a versatile digital library of heritage assets that allows the brand to apply traditional identity to contemporary products, resulting in a unique market position that appeals to both local sentiment and international luxury standards."
-    },
-
-    {
-        id: 24,
-        title: "Conversion-Driven Marketing: Promotional Campaign for Sports Betting",
-        description: "A high-intensity digital marketing campaign designed to drive user acquisition for a sports betting platform. I created a series of high-conversion banner ads and social media graphics that leverage dynamic sports imagery and bold Call to Action (CTA) elements. The campaign was optimized for multiple platforms to ensure maximum visibility and engagement during major sporting events.",
-        category: "Branding · Product Design",
-        tools: "Illustrator · Photoshop",
-        image: "assets/img/portfolio/portfolio-23.jpg",
-        link: "#",
-        problem: "In a saturated betting market, the client needed a way to cut through the digital noise and capture user attention within seconds during live, fast-paced sporting events.",
-        role: "Lead Performance Designer",
-        process: "I utilized high-action photography and high-contrast 'safety' colors (like neon greens and yellows) to ensure the CTA buttons were the focal point. I designed a scalable template system that allowed the marketing team to swap out match odds and team logos rapidly without losing brand integrity.",
-        outcome: "Delivered a high-performance visual toolkit that increased click-through rates and energetic brand presence across diverse social channels."
-    },
-
-    {
-        id: 23,
         title: {
             en: "Heritage Branding: Modernizing Traditional Bulgarian Motifs",
             bg: "Наследство и брандинг: Модернизиране на традиционни български мотиви"
