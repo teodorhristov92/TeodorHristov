@@ -527,9 +527,19 @@
           <figure class="case-hero">
 
             <img src="${project.image}" alt="${project.title[currentLanguage]}">
-
+            
+            ${project.video ? `
+              <div style="padding-bottom:10px;">
+                <i class="fab fa-youtube" style="color:red;font-size:16px;"></i>
+                <a href="${project.video}" target="_blank" rel="noopener">
+                  Watch Video
+                </a>
+              </div>
+            ` : ''}
+            
           </figure>
 
+          
 
           <h3>PROBLEM</h3>
 
@@ -569,6 +579,8 @@
       </div> 
         
       `;
+
+
     });
     cardContainer.innerHTML = portfolioHTML;
 

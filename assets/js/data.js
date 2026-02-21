@@ -396,6 +396,7 @@ const projectData = [
             bg: "After Effects"
         },
         image: "assets/img/portfolio/portfolio-44.jpg",
+        video: "https://youtu.be/tIrENUfeJE4?si=4SunTIEcJiz7KHAE",
         link: "#",
         problem: {
             en: "Students often feel overwhelmed by the technicalities of thesis formatting, leading to a high demand for guidance but low engagement with long-form text tutorials.",
@@ -574,7 +575,7 @@ const projectData = [
         },
         description: {
             en: "A comprehensive video production and motion graphics project featuring an interview on international quality standards. I designed the visual overlay system, title cards, and animated lower-thirds to enhance the educational value of the video. The project demonstrates the ability to blend professional video footage with engaging graphics for corporate training and branding.",
-            bg: "Проект за видео продукция и моушън графика, включващ интервю за международните стандарти за качество. Проектирах визуалната система от заглавни карти и анимирани надписи (lower-thirds) за подобряване на образователната стойност. Проектът съчетава професионални кадри с ангажираща графика."
+            bg: "Проект за видео продукция и моушън графика, включващ интервю за международните стандарти за качество. Проектирах визуалната система от заглавни карти и анимирани надписи (lower-thirds) за подобряване на образователната стойност. Проектът съчетава професионални кадри с ангажираща графика. Линк към видеото - https://www.youtube.com/watch?v=tIrENUfeJE4"
         },
         category: {
             en: "Motion",
@@ -585,6 +586,7 @@ const projectData = [
             bg: "After Effects · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-18.jpg",
+        video: "https://www.youtube.com/watch?v=LmEbu5RVQNU",
         link: "#",
         problem: {
             en: "Academic interviews on technical subjects like ISO standards can often feel static and dry, making it difficult for the audience to stay engaged or retain key technical information.",
@@ -699,6 +701,7 @@ const projectData = [
             bg: "After Effects · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-19.jpg",
+        video: "https://youtu.be/DKqo4LcWsQY?si=BYwXwtZh6aKrvBK_&t=2",
         link: "#",
         problem: {
             en: "Managing a series of six different interviews required a way to maintain visual interest and brand consistency while ensuring the unique personal narrative of each student remained the focus.",
@@ -1003,6 +1006,7 @@ const projectData = [
             bg: "After Effects"
         },
         image: "assets/img/portfolio/portfolio-28.jpg",
+
         link: "#",
         problem: {
             en: "Abstract environmental concepts like water filtration and industrial runoff are difficult for young students to grasp through static textbooks alone, leading to gaps in scientific understanding.",
@@ -1037,10 +1041,11 @@ const projectData = [
             bg: "Motion"
         },
         tools: {
-            en: "Illustrator",
-            bg: "Illustrator"
+            en: "Illustrator After Effectes",
+            bg: "Illustrator After Effectes"
         },
         image: "assets/img/portfolio/portfolio-29.jpg",
+        video: "https://youtu.be/BLZ7KLh-fgM?si=7saPVNR2hDufoxBK",
         link: "#",
         problem: {
             en: "Teaching 6-year-olds about nutrition requires moving away from complex charts and toward highly intuitive, recognizable icons that can be understood instantly without heavy text.",
@@ -1151,10 +1156,11 @@ const projectData = [
             bg: "Motion"
         },
         tools: {
-            en: "After Effects",
-            bg: "After Effects"
+            en: "After Effects Photoshop",
+            bg: "After Effects Photoshop"
         },
         image: "assets/img/portfolio/portfolio-20.jpg",
+        video: "https://youtu.be/zqtWNlT96Os?si=VjHe05v5zMxzSlPt&t=3",
         link: "#",
         problem: {
             en: "The client needed to communicate a high volume of technical specifications (106+ languages, offline modes, hotspot tech) in a short window of time without overwhelming the viewer or losing the 'premium gadget' feel.",
@@ -1193,6 +1199,7 @@ const projectData = [
             bg: "After Effects"
         },
         image: "assets/img/portfolio/portfolio-11.jpg",
+        video: "https://youtu.be/WrSBYdT931o?si=Pz5yE4u9yfwyjbAW",
         link: "#",
         problem: {
             en: "Teaching historical events to 3rd graders can often feel abstract or repetitive; the challenge was to make 19th-century revolutionary history feel dynamic and engaging for a generation raised on digital media.",
