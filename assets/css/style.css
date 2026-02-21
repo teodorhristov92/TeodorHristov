@@ -1678,3 +1678,38 @@ button.active {
 #card-grid {
   transition: height 0.5s ease-in-out;
 }
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  /* pushes items to the edges */
+  align-items: center;
+  /* optional, vertically centers them */
+
+}
+
+.line p:first-child {
+  margin: 0;
+  flex: 1;
+  /* take all space left of dates */
+  margin-right: 10px;
+  /* spacing between text and dates */
+  overflow: hidden;
+  /* cut off long text if needed */
+  text-overflow: ellipsis;
+  /* show "..." if too long */
+  white-space: nowrap;
+  /* keep on one line */
+}
+
+.line p:last-child {
+  margin: 0;
+  flex-shrink: 0;
+  /* prevent date from shrinking */
+  white-space: nowrap;
+  /* keep date on one line */
+}
+
+.line p {
+  margin-bottom: 0px !important;
+}
