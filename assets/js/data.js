@@ -759,6 +759,46 @@ const projectData = [
         }
     },
 
+
+    {
+        id: 40,
+        title: {
+            en: "Как да платиш местните си данъци и такси чрез iCard | Android, Updated",
+            bg: "Как да платиш местните си данъци и такси чрез iCard | Android, Updated"
+        },
+        description: {
+            en: "Pay your property tax, vehicle tax and garbage fee through your iCard without waiting in line. You can now also cover the obligations of third parties and organizations through your iCard.",
+            bg: "Плати своите данък недвижимо имущество, данък МПС и такса смет през своя iCard без да чакаш на опашка. Вече можеш да покриеш и задълженията на трети лица и организации през своя iCard."
+        },
+        category: {
+            en: "Motion",
+            bg: "Motion"
+        },
+        tools: {
+            en: "After Effects · Photoshop",
+            bg: "After Effects · Photoshop"
+        },
+        image: "assets/img/portfolio/portfolio-50.jpg",
+        video: "https://youtu.be/tQ83nvPa95E?si=TIOUJ6X0ycckLqcD",
+        link: "#",
+        problem: {
+            en: "Citizens often lose time and patience waiting in long queues to pay local taxes and fees. The challenge was to clearly communicate that these obligations can be handled quickly, securely, and remotely through iCard, while also building trust in the digital payment process.",
+            bg: "Гражданите често губят време и търпение в дълги опашки за плащане на местни данъци и такси. Предизвикателството беше ясно да се покаже, че тези задължения могат да се изпълняват бързо, сигурно и дистанционно чрез iCard, като същевременно се изгради доверие в дигиталния процес."
+        },
+        role: {
+            en: "Motion Designer",
+            bg: "Моушън дизайнер"
+        },
+        process: {
+            en: "I created a concise motion narrative focused on real-life pain points—waiting, paperwork, and limited working hours. Through clean transitions, clear iconography, and step-by-step visual storytelling, I demonstrated how users can pay their own or third-party obligations in just a few taps using iCard.",
+            bg: "Създадох кратък моушън разказ, фокусиран върху реални проблеми – чакане, бумащина и ограничено работно време. Чрез изчистени преходи, ясна иконография и стъпка по стъпка визуален разказ показах как потребителите могат да плащат свои или чужди задължения само с няколко докосвания чрез iCard."
+        },
+        outcome: {
+            en: "The final motion asset clearly positioned iCard as a fast and reliable alternative to on-site payments. The video improved user awareness of the service, increased confidence in digital tax payments, and supported wider adoption of iCard for everyday administrative tasks.",
+            bg: "Крайният моушън материал ясно позиционира iCard като бърза и надеждна алтернатива на плащането на гише. Видеото повиши информираността за услугата, доверието в дигиталните плащания и насърчи използването на iCard за ежедневни административни дейности."
+        }
+    },
+
     {
         id: 21,
         title: {
@@ -1407,7 +1447,8 @@ const projectData = [
             en: "Developed a robust, high-performance web framework that handles global traffic efficiently. The redesign led to a 50% increase in user-to-university inquiries and established Universitaet.com as a top-tier resource in the international education market.",
             bg: "Разработих стабилна уеб рамка, която обработва ефективно глобалния трафик. Редизайнът доведе до 50% увеличение на запитванията от студенти към университетите."
         }
-    }
+    },
+
 ];
 
 const categoryMap = {
