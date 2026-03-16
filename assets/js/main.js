@@ -488,7 +488,7 @@
       const filterClass = categoryMap[project.category.en] || "filter-app";
 
       portfolioHTML += `
-      <div class="col-lg-4 col-md-6 portfolio-item ${filterClass} box-shadow">
+      <div class="col-lg-6 col-md-6 portfolio-item ${filterClass} box-shadow">
         <div class="inside-card h-100">
           <div class="portfolio-wrap">
             <img src="${project.image}" class="img-fluid" alt="${project.title[currentLanguage]}">
