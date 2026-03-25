@@ -685,8 +685,8 @@ const projectData = [
     {
         id: 19,
         title: {
-            en: "Berufsbegleitend studieren & promovieren: Sechs Studierende im Interview | ONSITES Graduate School",
-            bg: "Обучение и докторантура по време на работа: Интервю с шестима студенти | ONSITES Graduate School"
+            en: "Berufsbegleitend studieren & promovieren: Sechs Studierende im Interview",
+            bg: "Обучение и докторантура по време на работа: Интервю с шестима студенти"
         },
         description: {
             en: "A professional video production and editing project for the ONSITES Graduate School. This work involved capturing and editing a series of interviews with six students, focusing on the challenges and successes of balancing a career with doctoral studies. I managed the motion graphics, including lower-thirds and transitions, to ensure a cohesive and high-quality educational presentation.",

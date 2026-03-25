@@ -496,14 +496,33 @@
           <div class="project-card d-flex flex-column h-100">
             <h3><strong>${project.title[currentLanguage]}</strong></h3>
             <p class="project-description">${project.description[currentLanguage]}</p>
+            
+            <p class="project-meta">
+              <strong>${currentLanguage === 'bg' ? 'Фокус:' : 'Focus:'}</strong>
+              
+              <span class="category-container">
+                ${project.category[currentLanguage].split(' · ').map(cat =>
+        `<span class="category-tag">${cat.trim()}</span>`
+      ).join('')}
+              </span>
+            </p>
+            <p class="project-tools">
+              ${project.tools[currentLanguage].split(' · ').map(tool =>
+        `<span class="tool-tag">${tool.trim()}</span>`
+      ).join('')}
+            </p>
             <hr>
-            <p class="project-meta">${project.category[currentLanguage]}</p>
-            <p class="project-tools">${project.tools[currentLanguage]}</p>
-            <hr>
-            <div class="portfolio-links mt-auto">
-              <a href="#project-${project.id}" class="portfolio-lightbox" data-glightbox='type: inline;'>
-                ${currentLanguage === 'bg' ? 'Виж проекта →' : 'View Case Study →'}
+            <div class="portfolio-links mt-auto d-flex justify-content-between align-items-center pt-2">
+
+    
+
+              <!-- Primary CTA button -->
+              <a href="#project-${project.id}" 
+                class="portfolio-lightbox btn-main" 
+                data-glightbox="type: inline;">
+                ${currentLanguage === 'bg' ? 'Разгледай проекта →' : 'View Project →'}
               </a>
+
             </div>
           </div>
         </div>
