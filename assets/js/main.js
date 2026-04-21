@@ -555,6 +555,15 @@
                 </a>
               </div>
             ` : ''}
+
+            ${project.link ? `
+              <div style="padding-bottom:10px;">
+                <i class="fas fa-file-word" style="color:red;font-size:16px;"></i>
+                <a href="${project.link}" target="_blank" rel="noopener noreferrer">
+                  Live Project | Design Prototype
+                </a>
+              </div>
+            ` : ''}
             
           </figure>
 

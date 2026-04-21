@@ -18,7 +18,7 @@ const projectData = [
             bg: "Illustrator · Photoshop · Blender",
         },
         image: "assets/img/portfolio/portfolio-26.jpg",
-        link: "#",
+
         problem: {
             en: "Transitioning a digital-first brand into a physical medium without losing the intricate details of the digital identity. The challenge was to design a 3D object that felt premium and tangible while maintaining the specific geometric precision of the yAxis logo and mascot for physical engraving.",
             bg: "Пренасянето на марка, фокусирана върху дигиталното, във физическа среда, без да се губят сложните детайли на дигиталната идентичност. Предизвикателството беше да се проектира 3D обект, който да се усеща като премиум продукт, като същевременно се запази специфичната геометрична прецизност на логото и талисмана на yAxis за физическо гравиране."
@@ -55,7 +55,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-47.jpg",
-        link: "#",
+
         problem: {
             en: "DynaDome needed to communicate a complex architectural benefit—retractable pool enclosures—in a fast-paced digital environment. The challenge was to create visual assets that clearly demonstrated the transition from outdoor to indoor space while maintaining high readability on small mobile screens where detailed architectural photos can often become cluttered.",
             bg: "DynaDome трябваше да комуникира сложно архитектурно предимство – подвижни покрития за басейни – в динамична дигитална среда. Предизвикателството беше да се създадат визуални активи, които ясно демонстрират прехода от открито към закрито пространство, като същевременно се запази висока четливост на малки мобилни екрани, където детайлните архитектурни снимки често изглеждат претрупани."
@@ -93,7 +93,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-41.jpg",
-        link: "#",
+
         problem: {
             en: "NovaLink needed to establish a Digital Era identity that felt both technologically advanced and approachable. The challenge was to design a physical business card that didn't feel outdated, requiring a seamless bridge between a traditional networking tool and the company's digital ecosystem.",
             bg: "NovaLink трябваше да изгради идентичност за дигиталната ера, която да изглежда технологично напреднала, но и достъпна. Предизвикателството беше да се проектира физическа визитка, която не изглежда остаряла, създавайки мост между традиционния инструмент за нетуъркинг и дигиталната екосистема на компанията."
@@ -131,7 +131,7 @@ const projectData = [
             bg: "Photoshop"
         },
         image: "assets/img/portfolio/portfolio-48.jpg",
-        link: "#",
+
         problem: {
             en: "Online academic programs often struggle with information overload in social media feeds. The challenge was to distill complex degree requirements and benefits into a split-second visual hook that felt prestigious enough for a Master's degree while being scroll-stopping on platforms like Instagram and LinkedIn.",
             bg: "Онлайн академичните програми често се борят с информационното претоварване в потока от новини на социалните мрежи. Предизвикателството беше да се синтезират сложните изисквания и предимства на специалностите във визуална кука за части от секундата, която да изглежда достатъчно престижна за магистърска степен, като същевременно спира вниманието в платформи като Instagram и LinkedIn."
@@ -206,7 +206,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-24.jpg",
-        link: "#",
+
         problem: {
             en: "The client's existing certification materials looked generic and lacked the 'prestige' factor required for a high-value recognition program, making the achievement feel less significant to recipients.",
             bg: "Съществуващите материали за сертифициране на клиента изглеждаха твърде обикновени и им липсваше факторът „престиж“, необходим за програма от висок клас, което правеше постижението да изглежда по-малко значимо за получателите."
@@ -244,7 +244,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-49.jpg",
-        link: "#",
+
         problem: {
             en: "Academic data and career statistics are often dense and unappealing, leading to low engagement rates among a younger, international student demographic on social platforms.",
             bg: "Академичните данни и статистиката за кариерно развитие често са плътни и непривлекателни, което води до ниски нива на ангажираност сред младата, международна студентска демографска група в социалните платформи."
@@ -282,7 +282,7 @@ const projectData = [
             bg: "Photoshop · Blender"
         },
         image: "assets/img/portfolio/portfolio-42.jpg",
-        link: "#",
+
         problem: {
             en: "The client needed high-end marketing imagery before the physical prototype was finished, requiring a digital solution that looked indistinguishable from a professional photo shoot.",
             bg: "Клиентът се нуждаеше от висок клас маркетингови изображения преди завършването на физическия прототип, което изискваше дигитално решение, неразличимо от професионална фотосесия."
@@ -320,7 +320,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-37.jpg",
-        link: "#",
+
         problem: {
             en: "The existing award materials felt outdated and lacked a cohesive 'brand' feel, failing to provide the sense of prestige and accomplishment that high-achieving students expected.",
             bg: "Съществуващите материали за награждаване изглеждаха остарели и им липсваше цялостно брандово усещане, което не успяваше да предаде чувството за престиж и триумф, очаквано от отличните студенти."
@@ -358,7 +358,7 @@ const projectData = [
             bg: "Figma · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-39.jpg",
-        link: "#",
+        link: "https://www.figma.com/proto/uBvG9f6toSwQAcu3v6wDks/Tiare.bg?node-id=3-71&starting-point-node-id=3%3A71&t=IkgSposhmeZAJvAI-1",
         problem: {
             en: "The original website had a cluttered interface and a multi-step checkout process that led to high cart abandonment rates and failed to showcase the premium quality of the floral arrangements.",
             bg: "Оригиналният уебсайт имаше претрупан интерфейс и сложен процес за завършване на поръчката, което водеше до висок процент на изоставени колички и не успяваше да покаже премиум качеството на цветните аранжировки."
@@ -397,7 +397,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-44.jpg",
         video: "https://youtu.be/tIrENUfeJE4?si=4SunTIEcJiz7KHAE",
-        link: "#",
+
         problem: {
             en: "Students often feel overwhelmed by the technicalities of thesis formatting, leading to a high demand for guidance but low engagement with long-form text tutorials.",
             bg: "Студентите често се чувстват претоварени от техническите подробности при форматирането на дипломни работи, което води до голямо търсене на насоки, но ниска ангажираност с дълги текстови уроци."
@@ -435,6 +435,7 @@ const projectData = [
             bg: "Adobe XD · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-17.jpg",
+        link: "https://gold.biz/",
         problem: {
             en: "Financial trading platforms are often visually overwhelming and technically intimidating, which can alienate new investors and diminish the brand's 'luxury' positioning.",
             bg: "Финансовите платформи за търговия често са визуално претоварени и технически смущаващи, което може да отблъсне новите инвеститори и да отслаби луксозното позициониране на бранда."
@@ -472,7 +473,7 @@ const projectData = [
             bg: "Photoshop · Blender"
         },
         image: "assets/img/portfolio/portfolio-43.jpg",
-        link: "#",
+
         problem: {
             en: "Marketing high-end furniture often requires expensive photoshoots with heavy physical logistics, making it difficult for the client to showcase multiple material variations (like different marble veins or metal patinas).",
             bg: "Маркетингът на мебели от висок клас често изисква скъпи фотосесии с тежка логистика, което затруднява клиента при представянето на множество вариации на материалите (като различни мраморни нишки или метални патини)."
@@ -510,7 +511,7 @@ const projectData = [
             bg: "Illustrator · Photoshop · Adobe Indesign"
         },
         image: "assets/img/portfolio/portfolio-35.jpg",
-        link: "#",
+
         problem: {
             en: "Long-form educational content is often difficult to digest on screens, leading to reader fatigue and poor information retention when presented in standard PDF formats.",
             bg: "Дългото образователно съдържание често е трудно за възприемане на екран, което води до умора на читателя и лошо усвояване на информацията, когато е представено в стандартни PDF формати."
@@ -548,7 +549,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-30.jpg",
-        link: "#",
+
         problem: {
             en: "The client was using a mix of third-party icon sets that felt inconsistent in stroke weight and style, leading to a cluttered interface and a weakened brand identity.",
             bg: "Клиентът използваше смес от готови комплекти икони, които бяха непоследователни по отношение на дебелината на линията и стила, което водеше до претрупан интерфейс и отслабена идентичност на бранда."
@@ -587,7 +588,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-18.jpg",
         video: "https://www.youtube.com/watch?v=LmEbu5RVQNU",
-        link: "#",
+
         problem: {
             en: "Academic interviews on technical subjects like ISO standards can often feel static and dry, making it difficult for the audience to stay engaged or retain key technical information.",
             bg: "Академичните интервюта по технически теми като ISO стандартите често могат да изглеждат статични и сухи, което затруднява аудиторията да остане ангажирана или да запомни ключова техническа информация."
@@ -625,7 +626,7 @@ const projectData = [
             bg: "Photoshop"
         },
         image: "assets/img/portfolio/portfolio-45.jpg",
-        link: "#",
+
         problem: {
             en: "Financial news moves rapidly, and the client needed a template that could communicate urgent market data without sacrificing the high-end, trustworthy aesthetic of the brand.",
             bg: "Финансовите новини се движат бързо и клиентът се нуждаеше от шаблон, който да комуникира спешни пазарни данни, без да жертва висок клас естетиката и доверието в бранда."
@@ -663,7 +664,7 @@ const projectData = [
             bg: "Photoshop"
         },
         image: "assets/img/portfolio/portfolio-46.jpg",
-        link: "#",
+
         problem: {
             en: "The client needed a 'Breaking News' template that felt more dramatic and significant than a standard update to mark a historic market milestone, requiring a blend of realism and urgency.",
             bg: "Клиентът се нуждаеше от шаблон за „Извънредни новини“, който да изглежда по-драматичен и значим от стандартна актуализация, за да отбележи исторически пазарен етап."
@@ -702,7 +703,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-19.jpg",
         video: "https://youtu.be/DKqo4LcWsQY?si=BYwXwtZh6aKrvBK_&t=2",
-        link: "#",
+
         problem: {
             en: "Managing a series of six different interviews required a way to maintain visual interest and brand consistency while ensuring the unique personal narrative of each student remained the focus.",
             bg: "Управлението на серия от шест различни интервюта изискваше начин за поддържане на визуален интерес и консистентност на бранда, като същевременно се гарантира, че личната история на всеки студент остава на фокус."
@@ -740,7 +741,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-1.jpg",
-        link: "#",
+
         problem: {
             en: "The brand needed a way to build community loyalty and 'off-screen' presence, but standard corporate merchandise felt too generic for the trendy, fast-paced crypto culture.",
             bg: "Брандът се нуждаеше от начин за изграждане на лоялност в общността и присъствие „извън екрана“, но стандартните корпоративни стоки изглеждаха твърде обикновени за модерната и динамична крипто култура."
@@ -780,7 +781,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-50.jpg",
         video: "https://youtu.be/tQ83nvPa95E?si=TIOUJ6X0ycckLqcD",
-        link: "#",
+
         problem: {
             en: "Citizens often lose time and patience waiting in long queues to pay local taxes and fees. The challenge was to clearly communicate that these obligations can be handled quickly, securely, and remotely through iCard, while also building trust in the digital payment process.",
             bg: "Гражданите често губят време и търпение в дълги опашки за плащане на местни данъци и такси. Предизвикателството беше ясно да се покаже, че тези задължения могат да се изпълняват бързо, сигурно и дистанционно чрез iCard, като същевременно се изгради доверие в дигиталния процес."
@@ -818,7 +819,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-21.jpg",
-        link: "#",
+
         problem: {
             en: "The game required a visual language that was both aesthetically striking and functional enough to be legible during fast-paced gameplay, where players must make split-second decisions based on color and shape.",
             bg: "Играта се нуждаеше от визуален език, който да е едновременно естетически впечатляващ и функционален, за да бъде четлив по време на бързия геймплей, където играчите вземат решения за части от секундата."
@@ -856,7 +857,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-36.jpg",
-        link: "#",
+
         problem: {
             en: "The brand needed to showcase a diverse range of technical products without appearing cluttered or overwhelming, requiring a layout that felt both luxurious and informative.",
             bg: "Брандът трябваше да представи разнообразна гама от технически продукти, без те да изглеждат претрупани, което изискваше оформление, усещащо се едновременно луксозно и информативно."
@@ -894,7 +895,7 @@ const projectData = [
             bg: "Photoshop"
         },
         image: "assets/img/portfolio/portfolio-31.jpg",
-        link: "#",
+
         problem: {
             en: "Traditional motifs are often stored in low-resolution or hand-drawn formats that are difficult to apply to modern industrial manufacturing or high-end digital branding without looking dated or pixelated.",
             bg: "Традиционните мотиви често се съхраняват в ниска резолюция или ръчно нарисувани формати, които са трудни за приложение в индустриалното производство или дигиталния брандинг, без да изглеждат остарели или пикселизирани."
@@ -932,7 +933,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-23.jpg",
-        link: "#",
+
         problem: {
             en: "In a saturated betting market, the client needed a way to cut through the digital noise and capture user attention within seconds during live, fast-paced sporting events.",
             bg: "На наситен пазар за залози, клиентът се нуждаеше от начин да пробие през дигиталния шум и да улови вниманието на потребителите за секунди по време на динамични спортни събития на живо."
@@ -969,8 +970,8 @@ const projectData = [
             en: "Adobe XD · Figma",
             bg: "Adobe XD · Figma"
         },
-        image: "assets/img/portfolio/portfolio-15.jpg",
-        link: "#",
+        image: "assets/img/portfolio/portfolio-16.jpg",
+        link: "https://graduate.me/",
         problem: {
             en: "The existing academic networking landscape was fragmented, making it difficult for students to navigate institutional requirements and for schools to present their programs in a modern, accessible way.",
             bg: "Съществуващата среда за академичен нетуъркинг беше фрагментирана, което затрудняваше студентите в навигацията на изискванията, а училищата не можеха да представят програмите си по модерен и достъпен начин."
@@ -1008,7 +1009,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-32.jpg",
-        link: "#",
+
         problem: {
             en: "Traditional cultural symbols are often viewed as purely historical artifacts; the challenge was to present them in a way that feels contemporary, collectable, and appealing to a younger, design-conscious audience.",
             bg: "Традиционните символи често се разглеждат само като исторически артефакти; предизвикателството беше да ги представя по начин, който е съвременен, колекционерски и привлекателен за младата аудитория."
@@ -1047,7 +1048,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-28.jpg",
 
-        link: "#",
+
         problem: {
             en: "Abstract environmental concepts like water filtration and industrial runoff are difficult for young students to grasp through static textbooks alone, leading to gaps in scientific understanding.",
             bg: "Абстрактни екологични концепции като филтрирането на водата и промишленото замърсяване са трудни за разбиране от учениците само чрез статични учебници, което води до пропуски в знанията."
@@ -1086,7 +1087,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-29.jpg",
         video: "https://youtu.be/BLZ7KLh-fgM?si=7saPVNR2hDufoxBK",
-        link: "#",
+
         problem: {
             en: "Teaching 6-year-olds about nutrition requires moving away from complex charts and toward highly intuitive, recognizable icons that can be understood instantly without heavy text.",
             bg: "Обучението на 6-годишни деца по темата хранене изисква отстъпване от сложните графики и насочване към интуитивни, разпознаваеми икони, които се разбират мигновено без тежък текст."
@@ -1124,7 +1125,7 @@ const projectData = [
             bg: "Illustrator · Photoshop · After Effects"
         },
         image: "assets/img/portfolio/Cardano.gif",
-        link: "#",
+
         problem: {
             en: "In a crowded NFT marketplace, the project needed to establish a premium 'fine art' feel that would appeal to serious collectors while maintaining the technical requirements for digital rarity and generative layering.",
             bg: "В пренаситен NFT пазар проектът трябваше да установи усещане за „изящно изкуство“, което да привлече сериозни колекционери, спазвайки техническите изисквания за рядкост и слоеве."
@@ -1162,7 +1163,7 @@ const projectData = [
             bg: "Illustrator · Photoshop · After Effects"
         },
         image: "assets/img/portfolio/Chainlink.gif",
-        link: "#",
+
         problem: {
             en: "The goal was to create a visual bridge between Chainlink’s technical identity as a data oracle and the high-energy aesthetic of the NFT space, making 'abstract data' feel like a tangible, premium asset.",
             bg: "Целта беше да се създаде визуален мост между техническата идентичност на Chainlink като оракул на данни и енергичната естетика на NFT пространството, превръщайки абстрактните данни в осезаем актив."
@@ -1201,7 +1202,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-20.jpg",
         video: "https://youtu.be/zqtWNlT96Os?si=VjHe05v5zMxzSlPt&t=3",
-        link: "#",
+
         problem: {
             en: "The client needed to communicate a high volume of technical specifications (106+ languages, offline modes, hotspot tech) in a short window of time without overwhelming the viewer or losing the 'premium gadget' feel.",
             bg: "Клиентът трябваше да съобщи голям обем технически спецификации за кратко време, без да претоварва зрителя или да губи усещането за премиум устройство."
@@ -1240,7 +1241,7 @@ const projectData = [
         },
         image: "assets/img/portfolio/portfolio-11.jpg",
         video: "https://youtu.be/WrSBYdT931o?si=Pz5yE4u9yfwyjbAW",
-        link: "#",
+
         problem: {
             en: "Teaching historical events to 3rd graders can often feel abstract or repetitive; the challenge was to make 19th-century revolutionary history feel dynamic and engaging for a generation raised on digital media.",
             bg: "Преподаването на исторически събития на третокласници често може да изглежда абстрактно; предизвикателството беше да направим революционната история от XIX век динамична и завладяваща за поколение, израснало с дигитални медии."
@@ -1278,7 +1279,7 @@ const projectData = [
             bg: "Figma · Photoshop"
         },
         image: "assets/img/portfolio/prototype-one.jpg",
-        link: "#",
+        link: "https://www.figma.com/proto/WhsPshwyUHVAuAqq0zCQ8S/Apps.com?node-id=115-783&starting-point-node-id=115%3A783&t=oH5UUuvzpNwsbO0L-1",
         problem: {
             en: "Users often find fitness apps overwhelming or difficult to read while exercising, leading to a disconnect between the data being collected and the user's ability to act on it during a workout.",
             bg: "Потребителите често намират фитнес приложенията за претоварени или трудни за четене по време на упражнения, което води до невъзможност да реагират на данните в реално време по време на тренировка."
@@ -1316,7 +1317,7 @@ const projectData = [
             bg: "Illustrator · Photoshop"
         },
         image: "assets/img/portfolio/portfolio-2.jpg",
-        link: "#",
+
         problem: {
             en: "The Web3 market is flooded with 'PFP' (Profile Picture) style art; the challenge was to create a more sophisticated, cinematic world that feels like the start of a deep lore-driven franchise to attract high-value collectors.",
             bg: "Web3 пазарът е пренаситен с изкуство в стил „PFP“ (профилни снимки); предизвикателството беше да се създаде по-сложен, кинематографичен свят, който да привлича колекционери на високостойностни активи."
@@ -1354,7 +1355,7 @@ const projectData = [
             bg: "Photoshop"
         },
         image: "assets/img/portfolio/portfolio-5.jpg",
-        link: "#",
+
         problem: {
             en: "Cryptocurrency is often represented by flat icons or low-quality graphics; the challenge was to elevate the Ethereum visual identity into something that feels physically 'heavy,' valuable, and institutional.",
             bg: "Криптовалутите често се представят чрез плоски икони; предизвикателството беше да издигна визуалната идентичност на Ethereum до нещо, което се усеща физически „тежко“, ценно и институционално."
@@ -1391,8 +1392,8 @@ const projectData = [
             en: "Adobe XD · Photoshop",
             bg: "Adobe XD · Photoshop"
         },
-        image: "assets/img/portfolio/portfolio-14.jpg",
-        link: "#",
+        image: "assets/img/portfolio/portfolio-15.jpg",
+        link: "https://onsites.com/",
         problem: {
             en: "The original portal suffered from 'information overload,' making it difficult for students to find specific course requirements and for administrators to manage large-scale academic datasets without friction.",
             bg: "Оригиналният портал страдаше от „информационно претоварване“, което затрудняваше студентите в намирането на изисквания, а администраторите – в управлението на големи масиви от данни."
@@ -1429,8 +1430,8 @@ const projectData = [
             en: "Adobe XD · Photoshop",
             bg: "Adobe XD · Photoshop"
         },
-        image: "assets/img/portfolio/portfolio-16.jpg",
-        link: "#",
+        image: "assets/img/portfolio/portfolio-14.jpg",
+        link: "https://universitaet.com/",
         problem: {
             en: "International students often face 'choice paralysis' due to the sheer volume of data. The portal needed a way to simplify thousands of degree programs into a searchable, digestible format without sacrificing the authority and prestige of the academic institutions.",
             bg: "Чуждестранните студенти често са изправени пред „парализа на избора“ поради огромния обем данни. Порталът трябваше да опрости хиляди програми в смилаем формат, запазвайки авторитета на институциите."
