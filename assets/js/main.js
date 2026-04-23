@@ -570,25 +570,25 @@
 
           
 
-          <h3>PROBLEM</h3>
+          <h3><strong>${currentLanguage === 'bg' ? 'ПРЕДИЗВИКАТЕЛСТВО:' : 'PROBLEM:'}</strong></h3>
 
           <div><p>${project.problem[currentLanguage]}</p></div>
 
           <hr>
 
-          <h3>ROLE & RESPONSIBILITIES</h3>
+          <h3><strong>${currentLanguage === 'bg' ? 'РОЛЯ И ОТГОВОРНОСТИ:' : 'ROLE & RESPONSIBILITIES:'}</strong></h3>
 
           <div><p>${project.role[currentLanguage]}</p></div>
 
           <hr>
 
-          <h3>PROCESS</h3>
+          <h3><strong>${currentLanguage === 'bg' ? 'ПРОЦЕС:' : 'PROCESS:'}</strong></h3>
 
           <div><p>${project.process[currentLanguage]}</p></div>
 
           <hr>
 
-          <h3>OUTCOME & LEARNINGS</h3>
+          <h3><strong>${currentLanguage === 'bg' ? 'РЕЗУЛТАТ И НАУЧЕНИ УРОЦИ:' : 'OUTCOME & LEARNINGS:'}</strong></h3>
 
           <div><p>${project.outcome[currentLanguage]}</p></div>
 

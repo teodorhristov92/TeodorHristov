@@ -1,7 +1,7 @@
 const projectData = [
     {
         id: 1,
-        createdAt: "2026-04-22",
+        createdAt: "2026-04-21",
         title: {
             en: "yAxis Crypto Competition Coin",
             bg: "yAxis Крипто състезателна монета"
@@ -39,7 +39,7 @@ const projectData = [
     },
     {
         id: 2,
-        createdAt: "2026-04-21",
+        createdAt: "2026-04-22",
         title: {
             en: "Advertisement design for brand DynaDome",
             bg: "Рекламен дизайн за марката DynaDome"
@@ -1491,6 +1491,45 @@ const projectData = [
         outcome: {
             en: "The final design successfully delivers a clear and modern advertising message, emphasizing both the lifestyle and technological benefits of the product. It enhances brand credibility and provides a visually appealing asset suitable for social media and digital campaigns.",
             bg: "Крайният дизайн успешно представя ясно и модерно рекламно послание, подчертавайки както лайфстайл, така и технологичните предимства на продукта. Визията повишава доверието към марката и служи като ефективен визуален материал за социални мрежи и дигитални кампании."
+        }
+    },
+
+    {
+        id: 41,
+        createdAt: "2026-04-22",
+        title: {
+            en: "Raider Cordless Mini Saw Campaign",
+            bg: "Рекламна кампания за акумулаторен мини трион Raider"
+        },
+        description: {
+            en: "A dynamic and impactful promotional visual created for a Raider power tool. The design emphasizes power, portability, and ease of use, featuring a rugged outdoor setting that highlights the product's practical application. The layout is optimized for retail and social media, balancing technical features with a strong call-to-action.",
+            bg: "Динамична и въздействаща рекламна визия, създадена за електроинструмент Raider. Дизайнът акцентира върху мощността, мобилността и лекотата на употреба, представяйки продукта в реална работна среда. Композицията е оптимизирана за търговски цели и социални мрежи, балансирайки между технически характеристики и ясен призив за действие."
+        },
+        category: {
+            en: "Advertising · Visual Design",
+            bg: "Реклама · Визуален дизайн"
+        },
+        tools: {
+            en: "Photoshop · Illustrator",
+            bg: "Photoshop · Illustrator"
+        },
+        image: "assets/img/portfolio/portfolio-52.jpg",
+
+        problem: {
+            en: "The goal was to present a professional power tool in a way that feels accessible to both DIY enthusiasts and professionals. The challenge lay in integrating multiple branding elements (Vektor and Raider) while maintaining a clean hierarchy for the technical benefits like battery life and safety.",
+            bg: "Целта беше професионален електроинструмент да бъде представен по достъпен начин както за хоби потребители, така и за професионалисти. Предизвикателството беше в интегрирането на множество брандинг елементи (Вектор и Raider), като същевременно се запази ясна йерархия на техническите предимства като безопасност и капацитет на батерията."
+        },
+        role: {
+            en: "I was responsible for the visual composition, focusing on product placement, background integration, and creating a cohesive typography style that aligns with the brand’s industrial identity.",
+            bg: "Отговарях за визуалната композиция, като се фокусирах върху позиционирането на продукта, интеграцията на фона и създаването на консистентен типографски стил, който съответства на индустриалната идентичност на марката."
+        },
+        process: {
+            en: "I started by selecting a high-contrast background to make the red product pop. I used a wood-textured banner for the main slogan to reinforce the product's purpose. Icons were added to make the features (safety, speed, and dual batteries) instantly readable. Finally, I implemented a high-contrast 'Order Now' button to drive conversions.",
+            bg: "Започнах с избора на висококонтрастен фон, за да изпъкне червеният цвят на продукта. Използвах банер с дървесна текстура за основния слоган, за да подчертая предназначението на триона. Добавих икони, за да направя характеристиките (безопасност, скорост и две батерии) лесно четими. Накрая добавих контрастен бутон „Поръчай сега“ за по-добра конверсия."
+        },
+        outcome: {
+            en: "The final asset is a professional, high-energy advertisement that effectively communicates the product's value proposition. It successfully bridges the gap between technical specifications and lifestyle utility, making it perfect for digital marketing.",
+            bg: "Крайният резултат е професионална и енергична реклама, която ефективно комуникира стойността на продукта. Визията успешно свързва техническите спецификации с практическото им приложение, което я прави идеална за дигитален маркетинг."
         }
     },
 ];
