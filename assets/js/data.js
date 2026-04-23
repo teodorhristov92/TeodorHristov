@@ -1,6 +1,7 @@
 const projectData = [
     {
         id: 1,
+        createdAt: "2026-04-22",
         title: {
             en: "yAxis Crypto Competition Coin",
             bg: "yAxis Крипто състезателна монета"
@@ -38,6 +39,7 @@ const projectData = [
     },
     {
         id: 2,
+        createdAt: "2026-04-21",
         title: {
             en: "Advertisement design for brand DynaDome",
             bg: "Рекламен дизайн за марката DynaDome"
@@ -1452,6 +1454,45 @@ const projectData = [
         }
     },
 
+
+    {
+        id: 40,
+        createdAt: "2026-04-23",
+        title: {
+            en: "Hydrowave Water Ionizer Campaign",
+            bg: "Hydrowave кампания за йонизатор на вода"
+        },
+        description: {
+            en: "A clean and modern promotional visual created for a water ionizer product. The design focuses on health, hydration, and technological sophistication, combining lifestyle photography with a sleek product render. The composition balances trust and innovation, clearly communicating the benefits of improved water quality through an approachable and visually engaging layout.",
+            bg: "Изчистена и модерна рекламна визия, създадена за йонизатор за вода. Дизайнът акцентира върху здравето, хидратацията и технологичната иновация, комбинирайки лайфстайл фотография с елегантен продуктов рендер. Композицията балансира доверие и иновация, като ясно комуникира ползите от подобреното качество на водата чрез визуално ангажиращ дизайн."
+        },
+        category: {
+            en: "Advertising · Visual Design",
+            bg: "Реклама · Визуален дизайн"
+        },
+        tools: {
+            en: "Photoshop · Illustrator",
+            bg: "Photoshop · Illustrator"
+        },
+        image: "assets/img/portfolio/portfolio-51.jpg",
+
+        problem: {
+            en: "Creating a compelling advertisement for a technical product while keeping the message simple and consumer-friendly. The challenge was to visually communicate abstract benefits like pH balance and hydration improvement in a clear and attractive way without overwhelming the viewer.",
+            bg: "Създаване на въздействаща реклама за технически продукт, като същевременно посланието остава ясно и достъпно за потребителя. Предизвикателството беше да се визуализират абстрактни ползи като pH баланс и подобрена хидратация по разбираем и привлекателен начин, без да се претоварва зрителят."
+        },
+        role: {
+            en: "I handled the full visual direction, including layout composition, typography, color selection, and integration of product and lifestyle imagery to create a cohesive and engaging advertisement.",
+            bg: "Отговарях за цялостната визуална концепция, включително композицията, типографията, избора на цветове и интеграцията на продуктовото и лайфстайл изображение за създаване на завършена и въздействаща реклама."
+        },
+        process: {
+            en: "The process began with wireframing the layout to establish hierarchy between product, headline, and benefits. I then refined the color palette to reflect freshness and trust (teal and green tones). The product image was enhanced and integrated with soft graphical elements, while the typography was carefully structured to guide the viewer’s attention toward key selling points and the call-to-action.",
+            bg: "Процесът започна със скициране на структурата, за да се изгради ясна йерархия между продукта, заглавието и ползите. След това прецизирах цветовата палитра, за да внушава свежест и доверие (тюркоазени и зелени тонове). Продуктовото изображение беше обработено и комбинирано с фини графични елементи, а типографията беше внимателно структурирана, за да насочва вниманието към ключовите предимства и призива за действие."
+        },
+        outcome: {
+            en: "The final design successfully delivers a clear and modern advertising message, emphasizing both the lifestyle and technological benefits of the product. It enhances brand credibility and provides a visually appealing asset suitable for social media and digital campaigns.",
+            bg: "Крайният дизайн успешно представя ясно и модерно рекламно послание, подчертавайки както лайфстайл, така и технологичните предимства на продукта. Визията повишава доверието към марката и служи като ефективен визуален материал за социални мрежи и дигитални кампании."
+        }
+    },
 ];
 
 const categoryMap = {

@@ -483,11 +483,12 @@
 
     // 3. ГЕНЕРИРАМЕ НОВИЯ HTML
     let portfolioHTML = "";
-    projectData.forEach(project => {
-      // Класът винаги се генерира от английското име за синхрон с филтрите
-      const filterClass = categoryMap[project.category.en] || "filter-app";
+    projectData
+      .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0))
+      .forEach(project => {
+        const filterClass = categoryMap[project.category.en] || "filter-app";
 
-      portfolioHTML += `
+        portfolioHTML += `
       <div class="col-lg-6 col-md-6 portfolio-item ${filterClass} box-shadow">
         <div class="inside-card h-100">
           <div class="portfolio-wrap">
@@ -502,14 +503,14 @@
               
               <span class="category-container">
                 ${project.category[currentLanguage].split(' · ').map(cat =>
-        `<span class="category-tag">${cat.trim()}</span>`
-      ).join('')}
+          `<span class="category-tag">${cat.trim()}</span>`
+        ).join('')}
               </span>
             </p>
             <p class="project-tools">
               ${project.tools[currentLanguage].split(' · ').map(tool =>
-        `<span class="tool-tag">${tool.trim()}</span>`
-      ).join('')}
+          `<span class="tool-tag">${tool.trim()}</span>`
+        ).join('')}
             </p>
             <hr>
             <div class="portfolio-links mt-auto d-flex justify-content-between align-items-center pt-2">
@@ -609,7 +610,7 @@
       `;
 
 
-    });
+      });
     cardContainer.innerHTML = portfolioHTML;
 
     // 4. РЕСТАРТИРАМЕ LIGHTBOX
