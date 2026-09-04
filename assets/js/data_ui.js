@@ -42,6 +42,8 @@ const heroText = {
         exp_three_company: "iCard",
         exp_four_title: "Graphic Designer",
         exp_four_company: "Soft Systems EOOD",
+        exp_five_title: "Graphic Designer",
+        exp_five_company: "TeMAX"
     },
     bg: {
         name: "Теодор Христов",
@@ -86,5 +88,7 @@ const heroText = {
         exp_three_company: "iCard",
         exp_four_title: "Графичен дизайнер",
         exp_four_company: "Soft Systems EOOD",
+        exp_five_title: "Графичен дизайнер",
+        exp_five_company: "TeMAX"
     },
 };

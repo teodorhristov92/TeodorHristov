@@ -1301,83 +1301,84 @@ const projectData = [
         }
     },
     */
-
-    {
-        id: 36,
-        title: {
-            en: "The Sovereign: Concept Art & Character Design for NFT Series",
-            bg: "The Sovereign: Концептуално изкуство и дизайн на герои за NFT серия"
+    /*
+        {
+            id: 36,
+            title: {
+                en: "The Sovereign: Concept Art & Character Design for NFT Series",
+                bg: "The Sovereign: Концептуално изкуство и дизайн на герои за NFT серия"
+            },
+            description: {
+                en: "An atmospheric concept art project for a high-fantasy NFT series titled The Sovereign. This work explores a cinematic desert landscape inhabited by mysterious silhouettes, with the Ethereum diamond serving as a central, celestial symbol. The project demonstrates advanced lighting, digital painting, and thematic storytelling in a digital-asset context.",
+                bg: "Атмосферен проект за концептуално изкуство за фентъзи NFT серия, озаглавена „The Sovereign“. Работата изследва кинематографичен пустинен пейзаж, обитаван от мистериозни силуети, с диаманта на Ethereum като централен символ. Проектът демонстрира напреднало осветление и дигитално рисуване."
+            },
+            category: {
+                en: "Product Design",
+                bg: "Product Design"
+            },
+            tools: {
+                en: "Illustrator · Photoshop",
+                bg: "Illustrator · Photoshop"
+            },
+            image: "assets/img/portfolio/portfolio-2.jpg",
+    
+            problem: {
+                en: "The Web3 market is flooded with 'PFP' (Profile Picture) style art; the challenge was to create a more sophisticated, cinematic world that feels like the start of a deep lore-driven franchise to attract high-value collectors.",
+                bg: "Web3 пазарът е пренаситен с изкуство в стил „PFP“ (профилни снимки); предизвикателството беше да се създаде по-сложен, кинематографичен свят, който да привлича колекционери на високостойностни активи."
+            },
+            role: {
+                en: "Concept Artist & World Builder",
+                bg: "Концептуален артист и създател на светове"
+            },
+            process: {
+                en: "I utilized a warm, monochromatic color palette to evoke a sense of ancient mystery. I focused on 'Rule of Thirds' composition to place the Ethereum symbol as a powerful focal point, using digital painting techniques in Photoshop to create environmental depth and atmospheric perspective.",
+                bg: "Използвах топла, монохроматична цветова палитра, за да предизвикам чувство за древна мистерия. Фокусирах се върху композицията „Правило на третините“, за да поставя символа на Ethereum като фокусна точка."
+            },
+            outcome: {
+                en: "Successfully established a distinct visual tone for the series that moved away from typical crypto-art clichés, positioning the project as a 'fine-art' collectible and generating significant interest from the Ethereum community.",
+                bg: "Успешно установих отличителен визуален тон, който избягва клишетата в крипто изкуството, позиционирайки проекта като колекционерска ценност и генерирайки значителен интерес в Ethereum общността."
+            }
         },
-        description: {
-            en: "An atmospheric concept art project for a high-fantasy NFT series titled The Sovereign. This work explores a cinematic desert landscape inhabited by mysterious silhouettes, with the Ethereum diamond serving as a central, celestial symbol. The project demonstrates advanced lighting, digital painting, and thematic storytelling in a digital-asset context.",
-            bg: "Атмосферен проект за концептуално изкуство за фентъзи NFT серия, озаглавена „The Sovereign“. Работата изследва кинематографичен пустинен пейзаж, обитаван от мистериозни силуети, с диаманта на Ethereum като централен символ. Проектът демонстрира напреднало осветление и дигитално рисуване."
+        */
+    /*
+        {
+            id: 37,
+            title: {
+                en: "Digital Alchemy: High-Fidelity Ethereum Asset",
+                bg: "Дигитална алхимия: Ethereum актив с висока точност"
+            },
+            description: {
+                en: "A cinematic 3D exploration of blockchain iconography, featuring a high-fidelity Ethereum prism. This project focuses on dramatic lighting and architectural scale, portraying digital currency as a foundational, monolithic asset. I utilized advanced layering and light-refraction techniques in Photoshop to create a sense of depth and prestige for this crypto-focused branding piece.",
+                bg: "Кинематографично 3D изследване на блокчейн иконографията, представящо прецизна призма на Ethereum. Проектът се фокусира върху драматично осветление и архитектурен мащаб, изобразявайки криптовалутата като монолитен актив. Използвах напреднали техники за пречупване на светлината във Photoshop."
+            },
+            category: {
+                en: "Product Design",
+                bg: "Product Design"
+            },
+            tools: {
+                en: "Photoshop",
+                bg: "Photoshop"
+            },
+            image: "assets/img/portfolio/portfolio-5.jpg",
+    
+            problem: {
+                en: "Cryptocurrency is often represented by flat icons or low-quality graphics; the challenge was to elevate the Ethereum visual identity into something that feels physically 'heavy,' valuable, and institutional.",
+                bg: "Криптовалутите често се представят чрез плоски икони; предизвикателството беше да издигна визуалната идентичност на Ethereum до нещо, което се усеща физически „тежко“, ценно и институционално."
+            },
+            role: {
+                en: "Visual Artist & Brand Specialist",
+                bg: "Визуален артист и бранд специалист"
+            },
+            process: {
+                en: "I focused on 'The Golden Hour' lighting principles to create realistic shadows and highlights on the prism's facets. By simulating light refraction and using a high-grain texture overlay, I achieved a 'photographic' quality that makes the digital asset feel like a real-world monument.",
+                bg: "Фокусирах се върху принципите на осветлението „Златният час“, за да създам реалистични сенки и акценти. Чрез симулиране на пречупване на светлината и използване на текстурни наслагвания, постигнах фотографическо качество на дигиталния актив."
+            },
+            outcome: {
+                en: "Created a high-impact visual that was adopted for premium marketing materials, successfully communicating the concepts of stability and 'digital gold' to a high-net-worth investor audience.",
+                bg: "Създадох въздействаща визия за премиум маркетингови материали, комуникираща успешно концепциите за стабилност и „дигитално злато“ пред аудитория от сериозни инвеститори."
+            }
         },
-        category: {
-            en: "Product Design",
-            bg: "Product Design"
-        },
-        tools: {
-            en: "Illustrator · Photoshop",
-            bg: "Illustrator · Photoshop"
-        },
-        image: "assets/img/portfolio/portfolio-2.jpg",
-
-        problem: {
-            en: "The Web3 market is flooded with 'PFP' (Profile Picture) style art; the challenge was to create a more sophisticated, cinematic world that feels like the start of a deep lore-driven franchise to attract high-value collectors.",
-            bg: "Web3 пазарът е пренаситен с изкуство в стил „PFP“ (профилни снимки); предизвикателството беше да се създаде по-сложен, кинематографичен свят, който да привлича колекционери на високостойностни активи."
-        },
-        role: {
-            en: "Concept Artist & World Builder",
-            bg: "Концептуален артист и създател на светове"
-        },
-        process: {
-            en: "I utilized a warm, monochromatic color palette to evoke a sense of ancient mystery. I focused on 'Rule of Thirds' composition to place the Ethereum symbol as a powerful focal point, using digital painting techniques in Photoshop to create environmental depth and atmospheric perspective.",
-            bg: "Използвах топла, монохроматична цветова палитра, за да предизвикам чувство за древна мистерия. Фокусирах се върху композицията „Правило на третините“, за да поставя символа на Ethereum като фокусна точка."
-        },
-        outcome: {
-            en: "Successfully established a distinct visual tone for the series that moved away from typical crypto-art clichés, positioning the project as a 'fine-art' collectible and generating significant interest from the Ethereum community.",
-            bg: "Успешно установих отличителен визуален тон, който избягва клишетата в крипто изкуството, позиционирайки проекта като колекционерска ценност и генерирайки значителен интерес в Ethereum общността."
-        }
-    },
-
-    {
-        id: 37,
-        title: {
-            en: "Digital Alchemy: High-Fidelity Ethereum Asset",
-            bg: "Дигитална алхимия: Ethereum актив с висока точност"
-        },
-        description: {
-            en: "A cinematic 3D exploration of blockchain iconography, featuring a high-fidelity Ethereum prism. This project focuses on dramatic lighting and architectural scale, portraying digital currency as a foundational, monolithic asset. I utilized advanced layering and light-refraction techniques in Photoshop to create a sense of depth and prestige for this crypto-focused branding piece.",
-            bg: "Кинематографично 3D изследване на блокчейн иконографията, представящо прецизна призма на Ethereum. Проектът се фокусира върху драматично осветление и архитектурен мащаб, изобразявайки криптовалутата като монолитен актив. Използвах напреднали техники за пречупване на светлината във Photoshop."
-        },
-        category: {
-            en: "Product Design",
-            bg: "Product Design"
-        },
-        tools: {
-            en: "Photoshop",
-            bg: "Photoshop"
-        },
-        image: "assets/img/portfolio/portfolio-5.jpg",
-
-        problem: {
-            en: "Cryptocurrency is often represented by flat icons or low-quality graphics; the challenge was to elevate the Ethereum visual identity into something that feels physically 'heavy,' valuable, and institutional.",
-            bg: "Криптовалутите често се представят чрез плоски икони; предизвикателството беше да издигна визуалната идентичност на Ethereum до нещо, което се усеща физически „тежко“, ценно и институционално."
-        },
-        role: {
-            en: "Visual Artist & Brand Specialist",
-            bg: "Визуален артист и бранд специалист"
-        },
-        process: {
-            en: "I focused on 'The Golden Hour' lighting principles to create realistic shadows and highlights on the prism's facets. By simulating light refraction and using a high-grain texture overlay, I achieved a 'photographic' quality that makes the digital asset feel like a real-world monument.",
-            bg: "Фокусирах се върху принципите на осветлението „Златният час“, за да създам реалистични сенки и акценти. Чрез симулиране на пречупване на светлината и използване на текстурни наслагвания, постигнах фотографическо качество на дигиталния актив."
-        },
-        outcome: {
-            en: "Created a high-impact visual that was adopted for premium marketing materials, successfully communicating the concepts of stability and 'digital gold' to a high-net-worth investor audience.",
-            bg: "Създадох въздействаща визия за премиум маркетингови материали, комуникираща успешно концепциите за стабилност и „дигитално злато“ пред аудитория от сериозни инвеститори."
-        }
-    },
-
+    */
     {
         id: 38,
         title: {

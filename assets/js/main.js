@@ -439,6 +439,8 @@
     const lang = currentLanguage;
     const data = heroText[lang];
 
+
+
     const exp_title = document.getElementById("exp_title");
     const exp_one_title = document.getElementById("exp_one_title");
     const exp_one_company = document.getElementById("exp_one_company");
@@ -448,6 +450,8 @@
     const exp_three_company = document.getElementById("exp_three_company");
     const exp_four_title = document.getElementById("exp_four_title");
     const exp_four_company = document.getElementById("exp_four_company");
+    const exp_five_title = document.getElementById("exp_five_title");
+    const exp_five_company = document.getElementById("exp_five_company");
 
     if (exp_title) exp_title.textContent = data.exp_title;
     if (exp_one_title) exp_one_title.textContent = data.exp_one_title;
@@ -458,6 +462,9 @@
     if (exp_three_company) exp_three_company.textContent = data.exp_three_company;
     if (exp_four_title) exp_four_title.textContent = data.exp_four_title;
     if (exp_four_company) exp_four_company.textContent = data.exp_four_company;
+
+    if (exp_five_title) exp_five_title.textContent = data.exp_five_title;
+    if (exp_five_company) exp_five_company.textContent = data.exp_five_company;
   }
 
   // =======================
